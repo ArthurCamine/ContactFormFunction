@@ -66,5 +66,5 @@ stages:
               azureSubscription: 'Avaliação Gratuita (d23dd3e3-4563-4e62-8ade-28cd94c07e42)'
               appType: 'functionAppLinux'
               appName: 'arthurcamine-contactform'
-              package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               runtimeStack: 'DOCKER|microsoft/azure-functions-dotnet-core2.0:2.0'
